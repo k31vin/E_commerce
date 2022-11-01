@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 .logo{
     height: 7%;
@@ -21,4 +22,8 @@
 .cart-img{
     width: 50px;
     height: 50px;
+}
+.profile_img{
+    width: 100%;
+    height: 100%;
 }
