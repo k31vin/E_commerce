@@ -13,6 +13,12 @@ session_start();
   <script src="bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+  <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .left{
+      float: right;
+    }
+  </style>
 </head>
 
 <body>
@@ -42,6 +48,9 @@ session_start();
           }
 
           ?>
+          <li class="nav-item" style="float: right;">
+            <a class="nav-link" href="./admin/admin_login.php">Admin</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Contact</a>
           </li>
@@ -52,9 +61,9 @@ session_start();
             <a class="nav-link" href="#">Total Price: <?php total_cart_price(); ?>/-</a>
           </li>
         </ul>
-        <form class="d-flex" action="search_products.php" method="get">
-          <input name="search_data" class="form-control me-2" type="search" placeholder="Search.." aria-label="Search">
-          <input type="submit" name="search_data_product" value="Search" class="btn btn-outline-light">
+        <form class="d-flex left" action="search_products.php" method="get" >
+          <input name="search_data" class="form-control me-2 left" type="search" placeholder="Search.." aria-label="Search">
+          <input type="submit" name="search_data_product" value="Search" class="btn btn-outline-light left">
         </form>
       </div>
     </div>
@@ -91,7 +100,7 @@ session_start();
 
 
   <div class="bg-light">
-    <h3 class="text-center">Hidden Store</h3>
+    <h3 class="text-center">Gravin'S Store</h3>
     <p class="text-center">Communication is at the heart of e-commerce and community</p>
   </div>
   <div class="row px-3">

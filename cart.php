@@ -83,7 +83,7 @@ session_start();
 
 
   <div class="bg-light">
-    <h3 class="text-center">Hidden Store</h3>
+    <h3 class="text-center">Gravin'S Store</h3>
     <p class="text-center">Communication is at the heart of e-commerce and community</p>
   </div>
 

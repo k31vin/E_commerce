@@ -33,6 +33,9 @@ session_start();
           <li class="nav-item">
             <a class="nav-link" href="./users_area/user_registration.php">Register</a>
           </li>
+          <li class="nav-item" style="float: right;">
+            <a class="nav-link" href="./admin/admin_login.php">Admin</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Contact</a>
           </li>
@@ -77,7 +80,7 @@ session_start();
   </nav>
 
   <div class="bg-light">
-    <h3 class="text-center">Hidden Store</h3>
+    <h3 class="text-center">Gravin'S Store</h3>
     <p class="text-center">Communication is at the heart of e-commerce and community</p>
   </div>
   <div class="row px-3">

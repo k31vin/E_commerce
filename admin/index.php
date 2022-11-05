@@ -13,6 +13,7 @@ include('../functions/common_function.php');
     <title>Admin Dashboard</title>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
     <style>
         .footer {
@@ -63,10 +64,10 @@ include('../functions/common_function.php');
                     <button><a href="index.php?view_categories" class="nav-link text-light bg-info my-1">View Categories</a></button>
                     <button><a href="index.php?insert_brand" class="nav-link text-light bg-info my-1">Insert Brands</a></button>
                     <button><a href="index.php?view_brands" class="nav-link text-light bg-info my-1">View Brands</a></button>
-                    <button><a href="index.php?list_users" class="nav-link text-light bg-info my-1">All Orders</a></button>
-                    <button><a href="index.php?list_users" class="nav-link text-light bg-info my-1">All payments</a></button>
+                    <button><a href="index.php?list_orders" class="nav-link text-light bg-info my-1">All Orders</a></button>
+                    <button><a href="index.php?list_payments" class="nav-link text-light bg-info my-1">All payments</a></button>
                     <button><a href="index.php?list_users" class="nav-link text-light bg-info my-1">List users</a></button>
-                    <button><a href="" class="nav-link text-light bg-info my-1">Logout</a></button>
+                    <button><a href="../index.php" class="nav-link text-light bg-info my-1">Logout</a></button>
                 </div>
             </div>
         </div>
@@ -85,11 +86,48 @@ include('../functions/common_function.php');
             if (isset($_GET['edit_products'])) {
                 include('edit_products.php');
             }
+            if (isset($_GET['delete_product'])) {
+                include('delete_product.php');
+            }
+            if (isset($_GET['view_categories'])) {
+                include('view_categories.php');
+            }
+            if (isset($_GET['view_brands'])) {
+                include('view_brands.php');
+            }
+            if (isset($_GET['edit_category'])) {
+                include('edit_category.php');
+            }
+            if (isset($_GET['edit_brands'])) {
+                include('edit_brands.php');
+            }
+            if (isset($_GET['delete_category'])) {
+                include('delete_category.php');
+            }
+            if (isset($_GET['delete_brands'])) {
+                include('delete_brands.php');
+            }
+            if (isset($_GET['list_orders'])) {
+                include('list_orders.php');
+            }
+            if (isset($_GET['list_payments'])) {
+                include('list_payments.php');
+            }
+            if (isset($_GET['list_users'])) {
+                include('list_users.php');
+            }
+
             ?>
         </div>
         <?php include("../includes/footer.php") ?>
 
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
